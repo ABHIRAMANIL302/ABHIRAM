@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AtoMade 3D Printing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+      background-color: #f7f7f7;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      color: #333;
+      padding: 15px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #0077ff;
+    }
+
+    .logo {
+      font-size: 1.6em;
+      font-weight: bold;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1705475025559-ad8efdedc74f?fm=jpg&q=60&w=3000') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0 0 10px;
+   color: white;
+   -webkit-text-stroke: 0.8px black; /* small black stroke */
+  
+    }
+
+    header p {
+      font-size: 1.2em;
+  
+  -webkit-text-stroke: 0.1px black; /* small black stroke */
+
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: #ff6600;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background: #e65c00;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+  
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .gallery-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+      max-width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .gallery-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .gallery-card .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #0077ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .gallery-card .btn:hover {
+      background: #005dc1;
+    }
+
+    .contact {
+      background: #fff;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .contact p, .contact a {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    .contact a {
+      color: #0077ff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #ff6600;
+    }
+
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 15px;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">AtoMade</div>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>AtoMade 3D Printing</h1>
+    <p>Creating the Future, Atom by Atom</p>
+    <a href="#contact" class="cta-button">Order a Custom Print</a>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We create custom 3D-printed objects with precision and passion. Whether it’s toys, models, or prototypes — we bring your ideas to life in vibrant detail.</p>
+  </section>
+
+  <section id="work">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <div class="gallery-card">
+        <img src="https://i.ibb.co/tpD7nS3m/new-1-bg.png" alt="Model 1">
+        <h3>Custom Model</h3>
+        <p>Personalized designs and shapes</p>
+        <a href="#contact" class="btn">Enquire</a>
+      </div>
+      <div class="gallery-card">
+        <img src="https://i.ibb.co/CstzGw6D/Whats-App-Image-2025-07-18-at-9-05-26-AM.jpg" alt="Model 2">
+        <h3>3D Tokens</h3>
+        <p>Perfect for games and branding</p>
+        <a href="#contact" class="btn">Enquire</a>
+      </div>
+      <div class="gallery-card">
+        <img src="https://i.ibb.co/D095bZj/Whats-App-Image-2025-07-20-at-2-25-24-AM.jpg" alt="Model 3">
+        <h3>Art Pieces</h3>
+        <p>Stylish and high-detail prints</p>
+        <a href="#contact" class="btn">Enquire</a>
+      </div>
+      <div class="gallery-card">
+        <img src="https://i.ibb.co/W4wYYKpG/Whats-App-Image-2025-08-02-at-7-54-29-PM.jpg" alt="Model 4">
+        <h3>Child Figurine</h3>
+        <p>From real photo to custom 3D statue</p>
+        <a href="#contact" class="btn">Enquire</a>
+      </div>
+      <div class="gallery-card">
+        <img src="https://i.ibb.co/JwT5dMm8/Whats-App-Image-2025-08-02-at-7-54-31-PM.jpg" alt="Model 5">
+        <h3>Miniature Prints</h3>
+        <p>Unique handcrafted miniatures</p>
+        <a href="#contact" class="btn">Enquire</a>
+      </div>
+      <div class="gallery-card">
+        <img src="https://i.ibb.co/YB2Jqxn4/Whats-App-Image-2025-08-02-at-8-44-33-PM.jpg"  alt="Model 6">
+        <h3>Personalized Gifts</h3>
+        <p>Memorable prints for special occasions</p>
+        <a href="#contact" class="btn">Enquire</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📱 <a href="https://wa.me/917025514985" target="_blank">WhatsApp: 7025514985</a></p>
+    <p>📧 <a href="mailto:abhiramanil302@gmail.com">abhiramanil302@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 AtoMade 3D Printing. All rights reserved.
+  </footer>
+</body>
+</html>
